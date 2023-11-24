@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html class="has-background-success">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bit Academy keuze</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <body>
+    <section class="section">
+      <div class="container">
+        <span id="datetime"></span>
+
+        <script>
+          function updateDateTime() {
+            const now = new Date();
+            const currentDateTime = now.toLocaleString();
+            document.querySelector('#datetime').textContent = currentDateTime;
+          }
+          setInterval(updateDateTime, 1000);
+        </script>
+
+        <h1 class="title">
+          keuze menu
+        </h1>
+        <div class="buttons is-right">
+          <button class="bulma-control-mixin box">
+            <a style="text-decoration: none" href="index2.html">coach</a>
+          </button>
+        </div>
+        <div class="buttons is-left">
+          <button class="bulma-control-mixin box">
+            <a style="text-decoration: none" href="index.html">student</a>
+          </button>
+        </div>
+        <div><output for="doel1">doel1:</output></div>
+        <div><output for="doel2">doel2:</output></div>
+        <div><output for="doel3">doel3:</output></div>
+        <img algin="center" src="blob.jpg" alt="">
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html class="has-background-success">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bit Academy student</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <body>
+    <section class="section">
+        <div class="container">
+            <span id="datetime"></span>
+
+            <script>
+            function updateDateTime() {
+                const now = new Date();
+                const currentDateTime = now.toLocaleString();
+                document.querySelector('#datetime').textContent = currentDateTime;
+            }
+            setInterval(updateDateTime, 1000);
+            </script>
+
+            <h1 class="title">
+                Dag Doelen
+            </h1>
+            <form action="index3.html" method="GET">
+                <div class="columns">
+                <div class="column is-narrow">
+                    <div class="box has-background-warning">
+                    <div class="column is-mobile is-dekstop">
+                        <p class="title is-5">Dag Doel 1</p>
+                        <p class="subtitle">Wat is je dag doel van vandaag</p>
+                        <label for="name">student naam:</label>
+                        <input class="input is-info" type="text" id="name" placeholder="student naam" required>
+                        <label for="doel1">doel1:</label>
+                        <input class="input is-info" type="text" id="doel1" placeholder="doel1" required>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="columns">
+                <div class="column is-narrow">
+                    <div class="box has-background-warning">
+                    <div class="column is-mobile is-dekstop">
+                        <p class="title is-5">Dag Doel 2</p>
+                        <p class="subtitle">Wat is je dag doel van vandaag</p>
+                        <label for="doel2">doel2:</label>
+                        <input class="input is-info" type="text" id="doel2" placeholder="doel2">
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div class="columns">
+                <div class="column is-narrow">
+                    <div class="box has-background-warning">
+                    <div class="column is-mobile is-dekstop">
+                        <p class="title is-5">Dag Doel 3</p>
+                        <p class="subtitle">Wat is je dag doel van vandaag</p>
+                        <label for="doel3">doel3:</label>
+                        <input class="input is-info" type="text" id="doel3" placeholder="doel3">
+                        <input type="submit" value="verstuur">
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div class="buttons is-right">
+        <button class="bulma-control-mixin box">
+          <a style="text-decoration: none" href="index3.html">keuze menu</a>
+        </button>
+    </div>
+  </body>
+</html>

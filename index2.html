@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html class="has-background-success">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bit Academy coach</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+  <section class="section">
+    <span id="datetime"></span>
+
+    <script>
+      function updateDateTime() {
+        const now = new Date();
+        const currentDateTime = now.toLocaleString();
+        document.querySelector('#datetime').textContent = currentDateTime;
+      }
+      setInterval(updateDateTime, 1000);
+    </script>
+
+    <div class="buttons is-right">
+      <button class="bulma-control-mixin box">
+        <a style="text-decoration: none" href="index3.html">keuze menu</a>
+      </button>
+    </div>
+    <div><output for="answer">student naam:</output></div>
+
+    <div><output for="doel1">doel1:</output></div>
+    <button class="button is-responsive has-background-danger">afkeuren</button>
+    <button class="button is-responsive has-background-info">goed</button>
+
+    <div><output for="doel2">doel2:</output></div>
+    <button class="button is-responsive has-background-danger">afkeuren</button>
+    <button class="button is-responsive has-background-info">goed</button>
+
+    <div><output for="doel3">doel3:</output></div>
+    <button class="button is-responsive has-background-danger">afkeuren</button>
+    <button class="button is-responsive has-background-info">goed</button>
+  </section>
+</body>
+</html>
